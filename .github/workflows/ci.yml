@@ -30,4 +30,4 @@ jobs:
         needs: build-test
         steps:
             - name: Checkout code
-              run: echo ""
+              run: echo "Checking out code"
