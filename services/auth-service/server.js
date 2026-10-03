@@ -7,6 +7,6 @@ const server = http.createServer(app);
 
 const port = env.port;
 
-server.listen(env.port, () => {
-  console.log(`API Gateway running on port ${port}`);
+server.listen(port, () => {
+    console.log(`API Gateway running on port ${port}`);
 });
