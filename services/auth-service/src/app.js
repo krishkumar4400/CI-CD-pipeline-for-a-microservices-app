@@ -1,5 +1,6 @@
 import express from "express";
-import cors from "cors"
+import cors from "cors";
+import userRouter from "./routes/user.route.js";
 
 const app = express();
 
@@ -15,5 +16,8 @@ app.get("/health", (req, res) => {
     status: "OK",
   });
 });
+
+// routes
+app.use("/api/v1/auth", userRouter);
 
 export default app;

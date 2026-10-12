@@ -11,5 +11,5 @@ const port = env.port;
 await connectToDB();
 
 server.listen(port, () => {
-    console.log(`API Gateway running on port ${port}`);
+  console.log(`Auth Service is running on port ${port}`);
 });
